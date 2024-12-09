@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-12-05T14:16:16.030Z"
+    "x-generation-date": "2024-12-05T21:52:14.037Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -2004,19 +2004,19 @@
         "properties": {
           "data": {
             "required": [
-              "produit",
+              "name",
               "description",
-              "prix"
+              "price"
             ],
             "type": "object",
             "properties": {
-              "produit": {
+              "name": {
                 "type": "string"
               },
               "description": {
                 "type": "string"
               },
-              "prix": {
+              "price": {
                 "type": "number",
                 "format": "float"
               },
@@ -2093,9 +2093,9 @@
       "Product": {
         "type": "object",
         "required": [
-          "produit",
+          "name",
           "description",
-          "prix"
+          "price"
         ],
         "properties": {
           "id": {
@@ -2104,13 +2104,13 @@
           "documentId": {
             "type": "string"
           },
-          "produit": {
+          "name": {
             "type": "string"
           },
           "description": {
             "type": "string"
           },
-          "prix": {
+          "price": {
             "type": "number",
             "format": "float"
           },
@@ -2763,13 +2763,13 @@
                 "documentId": {
                   "type": "string"
                 },
-                "produit": {
+                "name": {
                   "type": "string"
                 },
                 "description": {
                   "type": "string"
                 },
-                "prix": {
+                "price": {
                   "type": "number",
                   "format": "float"
                 },
