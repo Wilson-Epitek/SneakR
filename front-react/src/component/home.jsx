@@ -12,12 +12,13 @@ function Home() {
   }, []);
 
   return (
+
     <div className="p-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
             key={product.id}
-            className="border rounded-lg overflow-hidden shadow-md hover:shadow-lime-500 transition-shadow duration-300"
+            className="border rounded-lg overflow-hidden shadow-md hover:shadow-emerald-600 transition-shadow duration-300"
           >
             
             <div className="p-4">
