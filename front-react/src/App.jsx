@@ -1,18 +1,18 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import home from './component/home'
-import navbar from './component/navbar'
-import login from './component/login'
-import register from './component/register'
+import Home from './component/Home'
+import Navbar from './component/Navbar'
+import Login from './component/Login'
+import Register from './component/Register'
 
 const App=()=> {
   return (
     <Router>
-      <navbar/>
+      <Navbar/>
       <Routes>
-        <Route path='/' element={<home/>} />
-        <Route path='/login' element={<login/>} />
-        <Route path='/register' element={<register/>} />
+        <Route path='/' element={<Home/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/register' element={<Register/>} />
       </Routes>
    </Router>
   )
