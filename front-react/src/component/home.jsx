@@ -17,7 +17,7 @@ function Home() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="border rounded-lg overflow-hidden shadow-md hover:shadow-lime-500 transition-shadow duration-300"
           >
             
             <div className="p-4">
