@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { UserRoundCog } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -13,6 +14,8 @@ const Navbar = () => {
       <div className="flex space-x-4">
         <Link to="/login" className="text-lime-950 hover:text-blue-300">Login</Link>
         <Link to="/register" className="text-lime-950 hover:text-blue-300">Register</Link>
+        <Link to="/login" className="text-lime-950 hover:text-blue-300"><UserRoundCog/></Link>
+        
       </div>
     </nav>
   );

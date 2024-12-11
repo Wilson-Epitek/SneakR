@@ -21,7 +21,7 @@ function Home() {
             className="border rounded-lg overflow-hidden shadow-md hover:shadow-emerald-600 transition-shadow duration-300"
           >
             
-            <div className="p-4">
+            <div className="p-4 ">
               <h2 className="text-lg font-semibold">{product.name}</h2>
               <p className="text-gray-600 text-sm mb-2">{product.description}</p>
               <p className="text-lime-700 font-bold">Prix: €{product.price}</p>
