@@ -12,7 +12,7 @@ const Register = () => {
       <div className="bg-white p-6 rounded-md shadow-lg w-80">
         <h2 className="text-2xl text-center mb-4">Register</h2>
         <form>
-          {/* Champ Name */}
+        
           <input
             type="text"
             placeholder="Name"
@@ -21,7 +21,7 @@ const Register = () => {
             className="w-full p-2 mb-4 border rounded-md"
           />
           
-          {/* Champ Email */}
+        
           <input
             type="email"
             placeholder="Email"
@@ -30,7 +30,7 @@ const Register = () => {
             className="w-full p-2 mb-4 border rounded-md"
           />
           
-          {/* Champ Password */}
+          
           <div className="relative mb-4">
             <input
               type={showPassword ? 'text' : 'password'}
@@ -39,19 +39,11 @@ const Register = () => {
               onChange={(e) => setPassword(e.target.value)}
               className="w-full p-2 border rounded-md"
             />
-            <button
-              type="button"
-              onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-2 top-2"
-            >
+            <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-2 top-2">
               {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
             </button>
           </div>
-          
-          
-          <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded-md">
-            Login
-          </button>
+          <button type="submit" className="w-full p-2 bg-green-500 text-white rounded-md">Register</button>
         </form>
       </div>
     </div>
