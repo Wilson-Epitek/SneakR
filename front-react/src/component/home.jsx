@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 function Home() {
   const [products, setProducts] = useState([]);
 
@@ -8,7 +9,6 @@ function Home() {
     fetch('http://localhost:1337/api/products?populate=image') 
       .then((res) => res.json()) 
       .then((data) => setProducts(data.data)) 
-      .catch((error) => console.error('Erreur:', error)); 
   }, []);
 
   return (

@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setMessage(''); // Réinitialise le message
+    setMessage(''); 
 
     const response = await fetch('http://localhost:1337/api/auth/local', {
       method: 'POST',

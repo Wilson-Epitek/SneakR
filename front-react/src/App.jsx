@@ -5,6 +5,7 @@ import Navbar from './component/Navbar'
 import Login from './component/Login'
 import Register from './component/Register'
 import Footer from './component/Footer'
+import Wishlist from './component/Wishlist'
 
 const App=()=> {
   return (
@@ -14,6 +15,7 @@ const App=()=> {
         <Route path='/' element={<Home/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
+        <Route path='/Wishlist' element={<Wishlist/>} />
       </Routes>
       <Footer/>
    </Router>

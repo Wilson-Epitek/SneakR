@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { UserRoundCog } from 'lucide-react';
+import { ShoppingBasket } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -15,6 +16,7 @@ const Navbar = () => {
         <Link to="/login" className="text-lime-950 hover:text-blue-300">Login</Link>
         <Link to="/register" className="text-lime-950 hover:text-blue-300">Register</Link>
         <Link to="/login" className="text-lime-950 hover:text-blue-300"><UserRoundCog/></Link>
+        <Link to="/wishlist" className="text-lime-950 hover:text-blue-300"> <ShoppingBasket /></Link>
         
       </div>
     </nav>
