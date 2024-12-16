@@ -23,6 +23,9 @@ const Login = () => {
     });
 
     if (response.ok) {
+      const data = await response.json();
+      
+      localStorage.setItem('authToken', data.jwt); 
       setMessage("T'es co chef, t'es bon t'es bon");
     } else {
       setMessage("Loser tu connais pas tes identifiants");
@@ -32,7 +35,7 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-amber-50">
       <div className="bg-white p-6 rounded-md w-80 shadow-lg">
-        <h2 className="text-2xl text-center mb-4">Login</h2>
+        <h2 className="text-2xl text-center mb-4 ">Login</h2>
         <form onSubmit={handleLogin}>
           <input
             type="email"
@@ -61,7 +64,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="w-full p-2 bg-green-500 text-white rounded-md hover:bg-blue-600"
+            className="w-full p-2 bg-green-500 text-white rounded-md hover:bg-blue-300 transition duration-300"
           >
             Login
           </button>

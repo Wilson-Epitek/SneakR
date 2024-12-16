@@ -6,7 +6,7 @@ import Login from './component/Login'
 import Register from './component/Register'
 import Footer from './component/Footer'
 import Wishlist from './component/Wishlist'
-
+import Profil from './component/Profil'
 const App=()=> {
   return (
     <Router>
@@ -16,6 +16,7 @@ const App=()=> {
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/Wishlist' element={<Wishlist/>} />
+        <Route path='/Profil' element={<Profil/>} />
       </Routes>
       <Footer/>
    </Router>

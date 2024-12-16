@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex space-x-4">
         <Link to="/login" className="text-lime-950 hover:text-blue-300 transition duration-300">Login</Link>
         <Link to="/register" className="text-lime-950 hover:text-blue-300 transition duration-300">Register</Link>
-        <Link to="/login" className="text-lime-950 hover:text-blue-300 transition duration-300"><UserRoundCog/></Link>
+        <Link to="/profil" className="text-lime-950 hover:text-blue-300 transition duration-300"><UserRoundCog/></Link>
         <Link to="/wishlist" className="text-lime-950 hover:text-blue-300 transition duration-300"> <ShoppingBasket /></Link>
         
       </div>

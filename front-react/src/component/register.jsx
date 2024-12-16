@@ -55,7 +55,7 @@ const Register = () => {
               {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
             </button>
           </div>
-          <button type="submit" className="w-full p-2 bg-green-500 text-white rounded-md">
+          <button type="submit" className="w-full p-2 bg-green-500 text-white rounded-md hover:bg-blue-300 transition duration-300">
             Register
           </button>
         </form>

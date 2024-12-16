@@ -31,7 +31,7 @@ function Home() {
             <div className="p-4">
               <h2 className="text-lg font-semibold">{product.name}</h2>
               <p className="text-gray-600 text-sm mb-2">{product.description}</p>
-              <p className="text-lime-700 font-bold">Prix: €{product.price}</p>
+              <p className="text-lime-700 font-bold">Prix: {product.price}€</p>
               <button 
                 onClick={() => handleAddToWishlist(product)} 
                 className="mt-2 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-blue-300 transition duration-300">
