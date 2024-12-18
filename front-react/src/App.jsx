@@ -7,6 +7,7 @@ import Register from './component/Register'
 import Footer from './component/Footer'
 import Wishlist from './component/Wishlist'
 import Profil from './component/Profil'
+
 const App=()=> {
   return (
     <Router>
